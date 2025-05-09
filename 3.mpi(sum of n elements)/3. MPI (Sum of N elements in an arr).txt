@@ -1,0 +1,37 @@
+3. MPI (Sum of N elements in an array)
+
+Step 1: Go to the MPJ-express on chrome and download the latest version of it in the form of zip.
+Link: https://sourceforge.net/projects/mpjexpress/
+
+Step 2: Extract the mpj zip on the windows C by creating a folder of mpj in it.
+
+Step 3: Set up the environment variables.
+        Open Environment Variables:
+
+        Press Win + S → search for Environment Variables
+
+        Click on “Edit the system environment variables”
+
+        Click Environment Variables
+
+        Add MPJ_HOME variable:
+
+        Click New (under System variables)
+
+        Variable name: MPJ_HOME
+
+        Variable value: C:\mpj
+
+        Edit Path variable:
+
+        Select Path under System variables → Click Edit
+
+        Click New → Add:
+
+        C:\mpj\bin
+
+Step 4 : javac -cp "C:\mpj\lib\mpj.jar" Sum.java
+
+Step 5: C:\mpj\bin\mpjrun.bat -np 2  Sum
+
+If there are 2 processes, each will handle 5 elements, so the total data size is 5 * 2 = 10 elements (as defined by unitsize * size).

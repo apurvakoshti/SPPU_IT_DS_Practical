@@ -1,0 +1,23 @@
+Aim: Develop a distributed system, to find sum of N elements in an array by distributing N/n elements to n 
+number of processors MPI or OpenMP. Demonstrate by displaying the intermediate sums calculated 
+at different processors.
+
+Tools: Java Programming Environment, JDK, MPI library, MPJ express
+
+Theory: 
+MPI is a standard communication protocol used to program parallel computers or distributed systems.
+It allows multiple processes to communicate with each other by sending and receiving messages, typically 
+over a network or shared memory.
+
+Function	          Description
+MPI_Init()	          Initializes the MPI environment.
+MPI_Comm_size()	      Gets the total number of processes.
+MPI_Comm_rank()	      Gets the ID (rank) of the current process.
+MPI_Send()	          Sends a message to another process.
+MPI_Recv()	          Receives a message from another process.
+MPI_Finalize()	      Terminates the MPI environment.
+
+
+🧠 MPJ Express Explained (Message Passing in Java)
+MPJ Express is an open-source Java library that implements the MPI (Message Passing Interface) standard for parallel and distributed computing. 
+It's used to write high-performance parallel applications in Java, especially suitable for academic and research purposes.

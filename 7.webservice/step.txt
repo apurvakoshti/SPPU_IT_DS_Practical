@@ -1,0 +1,32 @@
+first step need to download the oracle java and maven from the given links
+JAVA_HOME = C:\Program Files\Java\jdk-20
+Path includes %JAVA_HOME%\bin
+
+Apache Maven-	apache-maven-3.9.9-bin.zip
+Download and extract it to a folder, e.g.:
+C:\Program Files\Apache\Maven\apache-maven-3.9.9
+
+Variable name: MAVEN_HOME
+Variable value: C:\Program Files\Apache\Maven\apache-maven-3.9.9
+
+path- C:\Program Files\Apache\Maven\apache-maven-3.9.9\bin
+
+Step 1: In calculator-app directory, run-  mvn clean install
+Step 2: In the same directory, run- mvn spring-boot:run
+
+and then go to the links given for working
+
+http://localhost:8080/ → Home Page
+
+http://localhost:8080/add?a=10&b=5 → Addition
+
+http://localhost:8080/sub?a=10&b=5 → Subtraction
+
+http://localhost:8080/mul?a=10&b=5 → Multiplication
+
+http://localhost:8080/div?a=10&b=5 → Division
+
+webservice main folder-> calculator-app folder -> src folder and pom.xml file then continue in src folder
+-> main folder->java folder->com folder->sb folder contains two folders
+one is controllers folder with Operations.java file in it 
+and second is "one" named folder with CalculatorApp.java file.

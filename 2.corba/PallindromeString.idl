@@ -1,0 +1,5 @@
+module PallindromeStringApp{
+    interface PallindromeString {
+    string checkPalindrome(in string input);
+    };
+};

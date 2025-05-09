@@ -1,0 +1,41 @@
+Aim: Implement Berkeley algorithm for clock synchronization.
+Tools: Python Language
+
+Theory:
+The Berkeley Algorithm is a clock synchronization technique used in distributed systems to synchronize the clocks of various nodes without relying on an external time source (like UTC or GPS). 
+It is a decentralized and master-slave based algorithm, proposed by the University of California, Berkeley.
+
+Algortihm Working:
+1.Choose Master: One computer is picked as the master.
+
+2.Ask Time: The master asks all other computers for their current time.
+
+3.Get Replies: Other computers send their time back to the master.
+
+4.Calculate Average: The master finds the average time (ignoring any wrong values).
+
+5.Send Adjustments: The master tells each computer (including itself) how much to change their clocks.
+
+
+Suppose 4 machines (including master) report these times (in seconds):
+Machine	Reported Time
+M1 (Master)	100.0
+M2	98.5
+M3	101.2
+M4	99.0
+
+Step 1: Average time = (100.0 + 98.5 + 101.2 + 99.0) / 4 = 99.675 seconds
+
+Step 2: Master sends offset to each:
+
+M1 → +(-0.325)
+
+M2 → +(1.175)
+
+M3 → +(-1.525)
+
+M4 → +(0.675)
+
+Each machine adjusts its clock accordingly.
+
+
